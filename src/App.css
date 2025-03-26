@@ -1,12 +1,15 @@
 @font-face {
   font-family: 'Special Elite' serif;
-  src: url(https://fonts.googleapis.com/css2?family=Special+Elite&display=swap);
+  font-weight: 400;
+  font-style: normal;
+  src: url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   font-family: 'Special Elite', serif;
   font-size: 1rem;
 }
