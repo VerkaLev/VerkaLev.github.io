@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://VerkaLev.github.io/app_interactive_elements",
+  "homepage": "https://verkalev.github.io/app_interactive_elements",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.3.0",
