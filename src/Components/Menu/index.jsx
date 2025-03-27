@@ -16,10 +16,12 @@ export const Menu = () => {
         </div>
 
         <div className='container_btn_log_out_cesta'>
-          <BtnGoToCart to='/cart'>
-            <img src={cart} alt='buy' />
-          </BtnGoToCart>
-          <p className='amount_of_elements_in_the_cart'>{dataCart.length}</p>
+          <div className='container_btn_cesta'>
+            <BtnGoToCart to='/cart'>
+              <img src={cart} alt='buy' />
+            </BtnGoToCart>
+            <p className='amount_of_elements_in_the_cart'>{dataCart.length}</p>
+          </div>
           <BtnWhiteStyled onClick={handleLogOutClick}>log out</BtnWhiteStyled>
         </div>
       </nav>

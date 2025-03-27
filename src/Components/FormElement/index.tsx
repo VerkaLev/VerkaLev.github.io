@@ -97,14 +97,18 @@ export const FormElement: React.FC<TypePropsFormElement> = ({
         <div className='menu_of_btn_link'>
           <button onClick={handleReturnClick} className='btn_return'></button>
           <BtnCreateNewElement to='createElement'>
-            create a new {title}
+            create a new
+            <br /> {title}
           </BtnCreateNewElement>
         </div>
         <div className='container_btn_log_out_cesta'>
-          <BtnGoToCart to='/cart'>
-            <img src={imgSrc} alt='buy' />
-          </BtnGoToCart>
-          <p className='amount_of_elements_in_the_cart'>{dataCart.length}</p>
+          <div className='container_btn_cesta'>
+            <BtnGoToCart to='/cart'>
+              <img src={imgSrc} alt='buy' />
+            </BtnGoToCart>
+            <p className='amount_of_elements_in_the_cart'>{dataCart.length}</p>
+          </div>
+
           <BtnWhiteStyled onClick={handleLogOutClick}>log out</BtnWhiteStyled>
         </div>
       </nav>

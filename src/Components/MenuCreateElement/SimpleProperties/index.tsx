@@ -37,87 +37,88 @@ export const SimpleProperties: React.FC<SimpleyComplexPropertiesPropsType> = ({
         <p>background-color</p>
         <input
           onChange={handleInputChange}
-          name="background-color"
+          name='background-color'
           value={propertyInput[backgroundColor]}
-          className="input_color"
-          type="color"
+          className='input_color'
+          type='color'
         />
       </div>
       <div>
         <p>color</p>
         <input
           onChange={handleInputChange}
-          name="color"
+          name='color'
           value={propertyInput.color}
-          className="input_color"
-          type="color"
+          className='input_color'
+          type='color'
         />
       </div>
       <div>
         <p>width</p>
-        <div className="flexbox_value">
+        <div className='flexbox_value'>
           <input
             onChange={handleInputChange}
-            name="width"
-            type="text"
+            name='width'
+            type='text'
             placeholder={
               !isEdit
                 ? 'example: 150'
                 : 'previous: ' + deletePx(propertyInput.width)
             }
           />
-          <p className="px">px</p>
+          <p className='px'>px</p>
         </div>
       </div>
       <div>
         <p>height</p>
-        <div className="flexbox_value">
+        <div className='flexbox_value'>
           <input
             onChange={handleInputChange}
-            name="height"
-            type="text"
+            name='height'
+            type='text'
             placeholder={
               !isEdit
                 ? 'example: 30'
                 : 'previous: ' + deletePx(propertyInput.height)
             }
           />
-          <p className="px">px</p>
+          <p className='px'>px</p>
         </div>
       </div>
       <div>
         <p>border-radius</p>
-        <div className="flexbox_value">
+        <div className='flexbox_value'>
           <input
             onChange={handleInputChange}
-            name="border-radius"
-            type="text"
+            name='border-radius'
+            type='text'
             placeholder={
               !isEdit
                 ? 'example: 15'
                 : 'previous: ' + deletePx(propertyInput[borderRadius])
             }
           />
-          <p className="px">px</p>
+          <p className='px'>px</p>
         </div>
       </div>
       <div>
         <p>border</p>
-        <div className="flexbox_value">
+        <div className='flexbox_value'>
           <input
             onChange={handleInputChange}
-            name="border-width"
-            type="text"
+            name='border-width'
+            className='input_border_width'
+            type='text'
             placeholder={
               !isEdit
                 ? 'example: 5'
                 : 'previous: ' + deletePx(propertyInput[borderWidth])
             }
           />
-          <p className="px">px</p>
+          <p className='px'>px</p>
           <select
             onChange={handleInputChange}
-            name="border-style"
+            name='border-style'
             value={propertyInput[borderStyle]}
           >
             <option>none</option>
@@ -133,10 +134,10 @@ export const SimpleProperties: React.FC<SimpleyComplexPropertiesPropsType> = ({
           </select>
           <input
             onChange={handleInputChange}
-            name="border-color"
+            name='border-color'
             value={propertyInput[borderColor]}
-            className="input_color"
-            type="color"
+            className='input_color'
+            type='color'
           />
         </div>
       </div>

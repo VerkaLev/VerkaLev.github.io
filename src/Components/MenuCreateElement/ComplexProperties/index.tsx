@@ -55,40 +55,40 @@ export const CopmlexProperties: React.FC<SimpleyComplexPropertiesPropsType> = ({
     <>
       <div>
         <p>shadow</p>
-        <div className="flexbox_value">
+        <div className='flexbox_value'>
           <input
-            name="boxValueShadowInput"
-            className="input_shadow"
-            type="text"
+            name='boxValueShadowInput'
+            className='input_shadow'
+            type='text'
             placeholder={
               !isEdit ? 'example: 1 1 1 1' : 'previous: ' + boxValueShadowInput
             }
             onChange={handleShadowChange}
           />
-          <p className="px">px</p>
+          <p className='px'>px</p>
           <input
-            name="colorShadowInput"
+            name='colorShadowInput'
             value={colorShadowInput}
-            className="input_color"
-            type="color"
+            className='input_color'
+            type='color'
             onChange={handleShadowChange}
           />
           <button onClick={handleAddShadowPropertyClick}>ok</button>
         </div>
       </div>
       <p>other property</p>
-      <div className="flexbox_value_other_property">
+      <div className='flexbox_value_other_property'>
         <input
           onChange={handleOwnPropertyChange}
-          type="text"
-          placeholder="display"
-          name="ownProperty"
+          type='text'
+          placeholder='display'
+          name='ownProperty'
         />
         <input
           onChange={handleOwnPropertyChange}
-          type="text"
-          placeholder="inline-block"
-          name="ownValueOfProperty"
+          type='text'
+          placeholder='inline-block'
+          name='ownValueOfProperty'
         />
         <button onClick={handleAddOwnPropertyClick}>ok</button>
       </div>

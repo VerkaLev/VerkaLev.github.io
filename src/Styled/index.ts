@@ -88,14 +88,7 @@ export const BtnCreateNewElement = styled(Link)`
 `;
 
 export const BtnGoToCart = styled(Link)`
-  position: relative;
-  width: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: none;
-  background-color: #fff;
-
   & > img {
-    width: 100%;
+    width: 30px;
   }
 `;

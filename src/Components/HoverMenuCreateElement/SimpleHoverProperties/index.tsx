@@ -41,10 +41,10 @@ export const SimpleHoverProperties: React.FC<
         <p>background-color</p>
         <input
           onChange={handleInputHoverChange}
-          name="background-color"
+          name='background-color'
           value={propertyInput[hover][backgroundColor]}
-          className="input_color"
-          type="color"
+          className='input_color'
+          type='color'
         />
       </div>
 
@@ -52,81 +52,82 @@ export const SimpleHoverProperties: React.FC<
         <p>color</p>
         <input
           onChange={handleInputHoverChange}
-          name="color"
+          name='color'
           value={propertyInput[hover].color}
-          className="input_color"
-          type="color"
+          className='input_color'
+          type='color'
         />
       </div>
 
       <div>
         <p>width</p>
-        <div className="flexbox_value">
+        <div className='flexbox_value'>
           <input
             onChange={handleInputHoverChange}
-            name="width"
-            type="text"
+            name='width'
+            type='text'
             placeholder={
               !isEdit
                 ? 'example: 150'
                 : 'previous: ' + deletePx(propertyInput[hover].width)
             }
           />
-          <p className="px">px</p>
+          <p className='px'>px</p>
         </div>
       </div>
 
       <div>
         <p>height</p>
-        <div className="flexbox_value">
+        <div className='flexbox_value'>
           <input
             onChange={handleInputHoverChange}
-            name="height"
-            type="text"
+            name='height'
+            type='text'
             placeholder={
               !isEdit
                 ? 'example: 30'
                 : 'previous: ' + deletePx(propertyInput[hover].height)
             }
           />
-          <p className="px">px</p>
+          <p className='px'>px</p>
         </div>
       </div>
 
       <div>
         <p>border-radius</p>
-        <div className="flexbox_value">
+        <div className='flexbox_value'>
           <input
             onChange={handleInputHoverChange}
-            name="border-radius"
-            type="text"
+            name='border-radius'
+            type='text'
             placeholder={
               !isEdit
                 ? 'example: 15'
                 : 'previous: ' + deletePx(propertyInput[hover][borderRadius])
             }
           />
-          <p className="px">px</p>
+          <p className='px'>px</p>
         </div>
       </div>
 
       <div>
         <p>border</p>
-        <div className="flexbox_value">
+        <div className='flexbox_value'>
           <input
             onChange={handleInputHoverChange}
-            name="border-width"
-            type="text"
+            name='border-width'
+            className='input_border_width'
+            type='text'
             placeholder={
               !isEdit
                 ? 'example: 5'
                 : 'previous: ' + deletePx(propertyInput[hover][borderWidth])
             }
           />
-          <p className="px">px</p>
+          <p className='px'>px</p>
           <select
             onChange={handleInputHoverChange}
-            name="border-style"
+            name='border-style'
             value={propertyInput[hover][borderStyle]}
           >
             <option>none</option>
@@ -142,10 +143,10 @@ export const SimpleHoverProperties: React.FC<
           </select>
           <input
             onChange={handleInputHoverChange}
-            name="border-color"
+            name='border-color'
             value={propertyInput[hover][borderColor]}
-            className="input_color"
-            type="color"
+            className='input_color'
+            type='color'
           />
         </div>
       </div>
