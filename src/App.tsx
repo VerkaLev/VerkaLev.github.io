@@ -32,7 +32,7 @@ function App() {
         <h2 className='header_app'>
           create <br />
           your <br />
-          element . . .
+          element
         </h2>
 
         <Routes>

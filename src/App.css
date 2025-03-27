@@ -30,7 +30,15 @@ body {
 }
 
 .header_app {
+  position: relative;
   margin: 50px auto 30px;
+  font-size: 1.6rem;
+}
+
+.header_app::after {
+  position: absolute;
+  right: -50%;
+  content: ' . . .';
   font-size: 1.6rem;
 }
 
@@ -491,6 +499,8 @@ input.input_shadow {
 
   .menu_of_btn_link > a {
     margin-right: 10px;
+    margin-bottom: 0;
+    padding: 0 5px;
   }
 }
 
